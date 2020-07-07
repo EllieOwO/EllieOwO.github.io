@@ -66,7 +66,7 @@
 			width: 1300px;
 			height: 70px;
 			margin-top: 10px;
-			border: 0px solid #bbbbbb;
+			border-bottom: 1px solid #D9DDE2;
 		}
 		span
 		{
@@ -102,24 +102,37 @@
 		}
 		#test2
 		{ 
+			border-top: 2px solid #bbbbbb;
+			position: relative;
 			color: white;
 			background-color: #21A089;
 			font-size: 20px;
 			font-weight: bold;
 			padding: 15px;
 		}
+		#up
+		{
+			border: 0px solid #bbbbbb;
+			position: absolute;
+			top:10px;
+			right:20px;
+		}
+
 		#test3
 		{
+			position: relative;
 			border-bottom: 1px solid #DFE3F1;
 			padding: 10px 0 20px 0;
 		}
 		#test4
 		{
+			position: relative;
 			border-bottom: 1px solid #DFE3F1;
 			padding: 20px 0 20px 0;
 		}
 		#test5
 		{
+			position: relative;
 			border-bottom: 1px solid #DFE3F1;
 			padding: 20px 0 20px 0;
 		}
@@ -133,7 +146,7 @@
 		#use li
 		{
 			padding: 5px;
-			list-style-type: circle;
+			list-style-type: square;
 		}
 		#main
 		{
@@ -181,7 +194,9 @@
 			padding-top: 20px;
 			border: 1px solid #414967;
 			width: 450px;
+			transition: all 0.2s;
 		}
+
 		#bottom2
 		{
 			color: #414967;
@@ -193,6 +208,7 @@
 			padding-top: 20px;
 			border: 1px solid #414967;
 			width: 450px;
+			transition: all 0.2s;
 		}
 		#bottom3
 		{
@@ -206,6 +222,7 @@
 			padding-top: 20px;
 			border: 1px solid #414967;
 			width: 450px;
+			transition: all 0.2s;
 		}
 		#bottom4
 		{
@@ -218,6 +235,7 @@
 			padding-top: 20px;
 			border: 1px solid #414967;
 			width: 450px;
+			transition: all 0.2s;
 		}
 		#bottom5
 		{
@@ -230,12 +248,64 @@
 			padding-top: 20px;
 			border: 1px solid #414967;
 			width: 450px;
+			transition: all 0.2s;
+		}
+		#bottom1:hover
+		{
+			background-color: #043763;
+			color: white;
+			transition-timing-function: ease-out;
+		}
+		#bottom2:hover
+		{
+			background-color: #043763;
+			color: white;
+			transition-timing-function: ease-out;
+		}
+		#bottom3:hover
+		{
+			background-color: #043763;
+			color: white;
+			transition-timing-function: ease-out;
+		}
+		#bottom4:hover
+		{
+			background-color: #043763;
+			color: white;
+			transition-timing-function: ease-out;
+		}
+		#bottom5:hover
+		{
+			background-color: #043763;
+			color: white;
+			transition-timing-function: ease-out;
 		}
 		#line
 		{
-			text-decoration-line: underline;
-			color: #414967;
+			text-decoration-line: underline;	
+			color: black;	
 		}
+		#bottom1:hover > #line
+		{
+			color:white;
+		}
+		#bottom2:hover > #line
+		{
+			color:white;
+		}
+		#bottom3:hover > #line
+		{
+			color:white;
+		}
+		#bottom4:hover > #line
+		{
+			color:white;
+		}
+		#bottom5:hover > #line
+		{
+			color:white;
+		}
+		
 		footer
 		{
 			background-color: #F5F6FA;
@@ -264,14 +334,66 @@
 			float: right;
 			margin: 10px 0 0 10px;
 		}
+		#down
+		{
+			border:0px solid #bbbbbb;
+			transform: rotate(0deg);
+			transition: all 0.5s;
+			position: absolute;
+			right:20px;
+		}
+
+		#down:hover
+		{
+			
+			transform: rotate(180deg);
+			transition-timing-function: ease-out;
+		}
+		#what
+		{
+			position: absolute;
+		}
+		form
+		{
+			position: relative;
+			border:0px solid #bbbbbb;
+			padding-left: 350px;
+			padding-top: 25px;
+		}
+		input[type="textarea"]
+		{
+			border: 2px solid #21A089;
+			position: absolute;
+			width: 450px;
+			line-height: 40px;
+		}
+		input[type="textarea"]:active
+		{
+			border: 2px solid black;
+		}
+		input[type="image"]
+		{
+			position: absolute;
+			height: 46px;
+			right: 447px;
+		}
+
 
 	</style>
 </head>
 <body id="page">
 	<header>
 		<div id = "logo">
-		<img src="./vir/header.PNG">
+		<a href="./index.html"><img src="./vir/header.PNG"></a>
 	</div>
+	<form name="myform" method="post">
+		<label>
+			<input type="textarea" name="msg" placeholder="   검색어를 입력해주세요.">
+		</label>
+		<label>
+			<input type="image"img src="./vir/search.PNG"name="btn">
+		</label>
+	</form>
 	<div id = "top">
 		<div id= "div1">
 			ENG
@@ -332,7 +454,8 @@
 		</div>
 		<div id="test2">
 			질병연구
-		</div>
+			<span id="up"><img src="./vir/up.PNG"></span>
+		</div>	
 			<ul id="use">
 				<span>
 				<li>질병연구 -</li>
@@ -342,12 +465,18 @@
 			</ul>
 		<div id="test3">
 			연구성과
+			<span id="what"><img src="./vir/what.png"></span>
+			 <span id="down"><img src="./vir/down.png"></span>
 		</div>
 		<div id="test4">
 			연구자원인프라
+			<span id="what"><img src="./vir/what.png"></span>
+			 <span id="down"><img src="./vir/down.png"></span>
 		</div>
 		<div id="test5">
 			국립보건연구원 바로가기
+			<span id="what"><img src="./vir/what.png"></span>
+			 <span id="down"><img src="./vir/down.png"></span>
 		</div>
 	</aside>
 

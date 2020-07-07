@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	</script>
 	<style type="text/css">
 		{
 			padding: 0;
@@ -11,6 +12,7 @@
 		{
 			list-style-type: none;
 		}
+
 		.clear 
 		{
 			clear: both;
@@ -21,6 +23,7 @@
 			margin: auto;
 			border: 0px solid #bbbbbb;
 		}
+
 		header
 		{
 			width: 1300px;
@@ -41,7 +44,7 @@
 		nav
 		{
 			width: 1300px;
-			height: 70px;
+			height: 80px;
 			margin-top: 10px;
 			border: 0px solid #bbbbbb;
 		}
@@ -59,24 +62,64 @@
 		}
 		aside
 		{
+			font-weight: bold;
+			color: #8996A9;
 			float: right;
 			border: 0px solid #bbbbbb;
 			margin-top: 10px;
 		}
+		aside img
+		{
+			border-radius: 50% 50%
+		}
 		aside li
 		{
+
 			text-align: right;
 			margin-bottom: 30px;
 		}
+		#fixed1
+		{
+			position: fixed;
+			bottom: 530px;
+			right: 120px;
+		}
+		#fixed2
+		{
+			position: fixed;
+			bottom: 410px;
+			right: 100px;
+		}
+		#fixed3
+		{
+			position: fixed;
+			bottom: 300px;
+			right: 100px;
+		}
+		#fixed4
+		{
+			position: fixed;
+			bottom: 180px;
+			right: 100px;
+		}
+		#fixed5
+		{
+			position: fixed;
+			bottom: 10px;
+			right: 120px;
+		}
 		#sub1
 		{
-			padding: 0px;
+		padding: 0px;
 		}
 		#sub1 li
 		{
 			display: inline-block;
 			text-align: center;
-			padding-right: 22px;
+			margin-right: 22px;
+			padding-bottom: 20px;
+			
+
 		}
 		#sub1 img:hover
 		{
@@ -85,6 +128,7 @@
 		}
 		#sub2
 		{
+			border:0px solid #bbbbbb;
 			padding: 0px;
 		}
 		#sub2 img
@@ -95,21 +139,122 @@
 		}
 		#sub2 li
 		{
+			border:0px solid #bbbbbb;
 			display: inline-block;
-			padding-right: 21px;
+			padding-right: 0px;
 			text-align: center;
-			width: 160px;
+			width: 155px;
+		}
+		#sub2 li:hover
+		{
+			color: #043763;
 		}
 		#sub2 img:hover
 		{
-			transform: scale(1.1);
+			transform: scale(1.2);
 		}
-		#sub3
+		
+		#square img
+		{
+			width: 150px;
+			height: 100px;
+		}
+		#square img:hover
+		{
+			transform: none;
+		}
+		#corona_bigbox
+		{
+			border: 1px solid #DFE3F1;
+			width: 740px;
+			position: relative;
+		}
+
+		#corona_list
 		{
 			padding: 0px;
+			margin-left: 15px;
+			width: 710px;
+			height: 50px;
+			border-bottom: 2px solid #DFE3F1;
+		}
+
+		#corona_list li
+		{
+			display: inline-block;			
+			border-bottom: 2px solid 000000;
+			padding-top: 5px;
+			padding-bottom: 21px;
+			margin-right: 15px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		#corona_list li:hover
+		{
+			border-bottom: 3px solid #21A089;
+			color: #21A089
+		}
+		#plus
+		{
+			color: #DFE3F1;
+			position: absolute;
+			right: 40px;
+			top:30px;
+		}
+
+		#corona_main
+		{
+			border: 0px solid #bbbbbb;
+			margin-bottom: 20px;
+			width: 380px;
+			font-size: 20px;
+			font-weight: bold;
+			margin-left: 20px; 
+		}
+		#corona_content
+		{
+			border: 0px solid #bbbbbb;
+			font-size: 15px;
+			width: 350px;
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+		#time
+		{
+			font-size: 15px;
+			margin-left: 20px;
+			margin-bottom: 30px;
+			color: gray;
+		}
+
+		#chart
+		{
+			position: absolute;
+			top: 70px;
+			right: 10px;
+			float: right;
+			border: 0px solid #DFE3F1;
+		}
+
+		#chart li
+		{
+			font-size: 13px;
+			list-style-type: square;
+			line-height: 40px;
+
+
+		}
+	
+		
+		#sub3
+		{
+			border: 0px solid #bbbbbb;
+			padding: 0px;
+			margin: 0px;
 		}
 		#sub3 li
 		{
+
 			display: inline-block;
 			margin-right: 21px;
 			/*padding으로 하면 확대될 때 padding도 같이 확대되어서 이상하게 확대됨.*/
@@ -118,8 +263,8 @@
 		}
 		#sub3 img
 		{
-			width: 250px;
-			height: 180px;
+			width: 255px;
+			height: 160px;
 			display: block;
 			/*display: block 덕분에 사진이 확대될 때 #sub3 li에 있는 display: inline-block 때문에
 			더럽게 확대되던 사진이 깔끔하게 확대됨.*/
@@ -129,47 +274,456 @@
 			transform: scale(1.1);
 			transition: transform 1s;
 		}
+		
 		footer
 		{
-			width: 1300px;
-			height: 100px;
+			width: 1100px;
+			height: 210px;
 			margin: 10px 0 10px 0;
 			border: 0px solid #bbbbbb;
+			background-color: #F5F6FA
+		}
+		#link
+		{
+			text-align: center;
+			font-size: 13.2px;
+			padding: 0px;
+			padding-top:20px;
+			padding-bottom: 20px;
+			border-top:1px solid #D9DDE2;
+			width:1100px;
+			font-weight: bold;
+			background-color: white;
+		}
+		#link li
+		{
+			display: inline-block;
+			text-align: center;
+			padding-right: 10px;
+		}
+		#link1
+		{
+			text-align: center;
+			font-size: 13px;
+			padding: 0px;
+			padding-top:20px;
+			padding-bottom: 20px;
+			border-top:0px solid #D9DDE2;
+			width:1100px;
+			font-weight: bold;
+			background-color: #F5F6FA
+		}
+		#link1 li
+		{
+			display: inline-block;
+			text-align: center;
+			padding-right: 10px;
+		}
+		#footer_color
+		{
+			width:1100px;
+			position: relative;
 		}
 		#address
 		{
 			float: left;
-			margin: 10px 0 0 10px;
+
 		}
 		#customer
 		{
-			float: right;
-			margin: 10px 0 0 10px;
+			position: absolute;
+			right:0px;
 		}
+		
+		.drop
+		{
+			display: inline-block;
+			position: relative;
+		}
+		.downcontents
+		{
+			display: none;
+			background-color: white;
+			box-shadow: 0px 5px 20px gray;
+			position: absolute;
+			transition: all 2s;
+		}
+		.drop:hover .downcontents
+		{
+			margin-top: 49px;
+			position: block;
+			width: 1000px;
+			height: 225px;
+			display: block;
+			transition-timing-function: ease-out;
+		}
+		.downcontents li
+		{
+			display: inline-block;
+			border-left:1px solid #bbbbbb;
+			line-height: 30px;
+			padding-left: 10px; 
+		}
+	
+		#sub1_color1
+		{
+			border-bottom:2px solid #21A089;
+		}
+		#sub1_color2
+		{
+			border-bottom:2px solid #4A75B9;
+		}
+		#sub1_color3
+		{
+			border-bottom:2px solid #C24EA8;
+		}
+		#sub1_color4
+		{
+			border-bottom:2px solid #21A089;
+		}
+		form
+		{
+			position: relative;
+			border:0px solid #bbbbbb;
+			padding-left: 350px;
+			padding-top: 25px;
+		}
+		input[type="textarea"]
+		{
+			border: 2px solid #21A089;
+			position: absolute;
+			width: 450px;
+			line-height: 40px;
+		}
+		input[type="textarea"]:active
+		{
+			border: 2px solid black;
+		}
+		input[type="image"]
+		{
+			position: absolute;
+			height: 46px;
+			right: 447px;
+		}
+		#inline
+		{
+			border:0px solid #bbbbbb;
+			display: inline-block;
+			width: 1090px;
+			position: relative;
+
+		}
+		#section_C
+		{
+			padding: 0px;
+			border: 1px solid #DFE3F1;
+			height: 271px;
+			position: absolute;
+			top: 0px;
+			right:0px;
+		}
+		#section1
+		{
+			margin: 0px;
+			padding: 0px;
+			top:0px;
+			border: 0px solid #bbbbbb;
+			text-align: center;
+			
+		}
+		#section2
+		{
+			width: 330px;
+			text-align: center;
+			padding: 0px;
+			border: 0px solid #bbbbbb;
+			margin-top: 30px;
+
+		}
+		
+		#section2 li
+		{
+			color:#66768C;
+			border: 1px solid #DFE3F1;
+			display: inline-block;
+			width: 35px;
+			height: 25px;
+			margin-left: 0px; 
+			background-color: #F5F6FA;
+		}
+		#section2 li:hover
+		{
+			background-color: #21A089;
+			color: white;
+		}
+		#section3
+		{
+			width: 330px;
+			text-align: center;
+			border:0px solid #bbbbbb;
+			padding: 0px;
+			margin-bottom: 30px;
+		}
+		#section3 li
+		{
+			color:#66768C;
+			border: 1px solid #DFE3F1;
+			display: inline-block;
+			width: 35px;
+			height: 25px;
+			background-color: #F5F6FA;
+		}
+		#section3 li:hover
+		{
+			background-color: #21A089;
+			color: white;
+		}
+		#section4
+		{
+			text-align: center;
+			padding: 0px;
+			width: 330px;
+		}
+		#section4 li
+		{
+			border: 1px solid #bbbbbb;
+			display: inline-block;
+		}
+		#section5
+		{
+			text-align: center;
+			padding: 0px;
+			width: 330px;
+		}
+		#section5 li
+		{
+			border: 1px solid #bbbbbb;
+			display: inline-block;
+		}
+
+		table
+		{
+			border-collapse: collapse;
+		}
+		table,td,th
+		{
+			border-bottom: solid 1px #DFE3F1;
+			padding:20px;
+		}
+		#td1
+		{
+			border-bottom: 1px solid white;
+			border-left: 1px solid white;
+			border-right: 1px solid #DFE3F1;
+			border-top: 1px solid white;
+		}
+		#td2
+		{
+			border-bottom: 1px solid #DFE3F1;
+			border-left: 1px solid white;
+			border-right: 1px solid #DFE3F1;
+			border-top: 1px solid white;
+			background-color: #F5F6FA;
+		}
+		#td3
+		{
+			border-bottom: 1px solid #DFE3F1;
+			border-left: 1px solid #DFE3F1;
+			border-right: 1px solid white;
+			border-top: 1px solid white;
+			background-color: #F5F6FA;
+		}
+		#sec_img
+		{
+			border:0px solid #bbbbbb;
+			display: inline-block;
+		}
+
+		#sns
+		{
+			position: relative;
+			border:0px solid #bbbbbb;
+			display: inline-block;
+			width:1090px;
+		}
+		#sns img
+		{
+			margin-top: 0px;
+		}
+		#fontsize1
+		{
+			font-size: 25px;
+			position: absolute;
+		}
+		#underline1
+		{
+ 			border-bottom: 15px solid #FFD02B;
+ 			width: 200px;
+		}
+		#fontsize2
+		{
+			font-size: 25px;
+
+		}
+		#fontsize3
+		{
+			font-size: 15.5px;
+			color: #9FA19F
+		}
+		#snsbox2
+		{
+			border: 0px solid #bbbbbb;
+			position: absolute;
+			top:30px;
+			right:5px;
+			margin: 0px;
+			padding: 0px;
+
+		}
+		#snsbox2 li
+		{
+			display: inline-block;
+			padding: 0px;
+			margin: 0px;
+		}
+		#sub_1
+		{
+			margin: 0px;
+			padding: 0px;
+			color: #9FA19F;
+		}
+		#sub_1 li
+		{
+			font-size: 10.5px;
+			text-align: center;
+			border-bottom: 2px solid #bbbbbb;
+			display: inline-block;
+			margin: 0px;
+			padding: 30px;
+			padding-top:20px;
+			padding-bottom:20px;
+			margin-right: 20px;
+			background-color: white;
+		}
+		#sub_1 li:hover
+		{
+			border-bottom: 2px solid #21A089;
+		}
+		
+		#bigfont
+		{
+			font-size: 14px;
+			font-weight: bold;
+			color: black;
+		}
+
+		#li_1
+		{
+			width:196px;
+		}
+		#li_2
+		{
+			width:196px;
+		}
+		#li_3
+		{
+			width:196px;
+		}
+		#li_4
+		{
+			width:196px;
+		}
+		#font_color
+		{
+			color:#21A089;
+		}
+		#border
+		{
+			border:1px solid #D3D8DD;
+			padding: 10px;
+			color:#727779;
+		}
+		#bob
+		{
+			padding: 0px;
+			margin: 0px;
+			margin-left: 186px;
+			width: 200px;
+			list-style-type: square;
+			position: absolute;
+		}
+		#bob li
+		{
+			padding:0px;
+			margin: 0px;
+			padding-left: 10px; 
+			border-left: 1px solid #bbbbbb;
+			display: block;
+			line-height: 30px;
+
+
+		}
+	
+	
 	</style>
 </head>
 <body id="page">
 	<header>
 		<div id = "logo">
-		<img src="./vir/header.PNG">
+		<a href="./index.html"><img src="./vir/header.PNG"></a>
 	</div>
+	<form name="myform" method="post">
+		<label>
+			<input type="textarea" name="msg" placeholder="   검색어를 입력해주세요.">
+		</label>
+		<label>
+			<input type="image"img src="./vir/search.PNG"name="btn">
+		</label>
+	</form>
 	<div id = "top">
-		로그인 | 회원가입 | <a href="./me.html"> 마이페이지 </a> | 고객센터
+		로그인 | 회원가입 | <a href="./me.html" target="_blank"> 마이페이지 </a> | 고객센터
 	</div>
 	</header>
+
 	<div class="clear"></div>
+
 	<nav>
-		<ul>
-			<li> 감염병 </li>
-			<li> 건강정책 </li>
+		<ul id="head_menu">
+			<div class="drop">
+				<ul> 감염병
+					<div class="downcontents">
+					<li>감염병정보</li>
+					<li>해외감염정보</li>
+						<ul id="bob">
+							<div>
+							<li>해외질병</li>
+							<li>해외감염병NOW</li>
+							<li>예방접종정보</li>
+							<li>국가별요구사항</li>
+						</ul>
+					<li>감염병유행정보</li>
+					<li>결핵</li>
+					<li>예방접종</li>
+					<li>감염병간행물</li>
+					</div>
+				</ul>
+			</div>
+			<div class="drop">
+				<ul> 건강정책
+					<div class="downcontents">
+					</div>
+				</ul>
+			</div>
+			
 			<li> 정책정보 </li>
-			<li> <a href="./index01.html">연구개발</a> </li>
+			<li> <a href="./index01.html"target="_blank">연구개발</a> </li>
 			<li> 알림·자료</li>
 			<li> 간행물·통계</li>
 			<li> 민원·정보공개</li>
 			<li> 기관소개 </li>
 			<li> 사업별홈페이지 </li>
 		</ul>
+	</div>
 	</nav>
 	<div class="clear"></div>
 		<section>
@@ -177,46 +731,183 @@
 		</section>
 		<aside>
 			<ul>
-				<li> 사용자별 맞춤메뉴 </li>
-				<li> 일반인 </li>
-				<li> 연구자 </li>
-				<li> 언론인 </li>
+				<li id="fixed1"> 사용자별<br>맞춤메뉴 </li>
+				<li id="fixed2"> <img src="./vir/aside00.PNG" onmouseover="this.src='./vir/aside00_C.PNG'" onmouseout="this.src = './vir/aside00.PNG'"> </li>
+				<li id="fixed3"> <img src="./vir/aside01.PNG" onmouseover="this.src='./vir/aside01_C.PNG'" onmouseout="this.src = './vir/aside01.PNG'"> </li>
+				<li id="fixed4"> <img src="./vir/aside02.PNG" onmouseover="this.src='./vir/aside02_C.PNG'" onmouseout="this.src = './vir/aside02.PNG'"> </li>
+				<li id="fixed5"><a href="./index.html"><img src="./vir/Top.PNG"></a></li>
 			</ul>
 		</aside>
 		<div class="clear"></div>
 		<section>
 			<ul id="sub1">
-				<li> <img src="./vir/img00.PNG" width="250"> <br> 온열질환 건강수칙 </li>
-				<li> <img src="./vir/img01.PNG" width="250"> <br> 비브리오패혈증 예방수칙 </li>
-				<li> <img src="./vir/img02.PNG" width="250"> <br> 미세먼지 건강수칙 </li>
-				<li> <img src="./vir/img03.PNG" width="250"> <br> 코로나19 영상자료 </li>
+				<li id="sub1_color1"> <img src="./vir/img00.PNG" width="250"> <br> 온열질환 건강수칙 </li>
+				<li id="sub1_color2"> <img src="./vir/img01.PNG" width="250"> <br> 비브리오패혈증 예방수칙 </li>
+				<li id="sub1_color3"> <img src="./vir/img02.PNG" width="250"> <br> 미세먼지 건강수칙 </li>
+				<li id="sub1_color4"> <img src="./vir/img03.PNG" width="250"> <br> 코로나19 영상자료 </li>
 			</ul>
 		</section>
 		<section>
 			<ul id="sub2">
-				<li> <img src="./vir/icon00.PNG"><br> 국가별 질병정보 </li>
-				<li> <img src="./vir/icon01.PNG"><br> 홍보자료 </li>
-				<li> <img src="./vir/icon02.PNG"><br> 이달의 건강정보</li>
-				<li> <img src="./vir/icon03.PNG"><br> 조직도직원검색</li>
-				<li> <img src="./vir/icon04.PNG"><br> 법령지침서식</li>
-				<li> <img src="./vir/icon05.PNG"><br> 공고/공시</li>
+				<li> <span id="square"> <img src="./vir/find.PNG"> </span> </li>
+				<li> <img src="./vir/icon00.PNG" onmouseover="this.src ='./vir/icon00_C.PNG'" onmouseout="this.src='./vir/icon00.PNG'"> <br> 국가별 질병정보 </li>
+				<li> <img src="./vir/icon01.PNG" onmouseover="this.src ='./vir/icon01_C.PNG'" onmouseout="this.src='./vir/icon01.PNG'"> <br> 홍보자료 </li>
+				<li> <img src="./vir/icon02.PNG" onmouseover="this.src ='./vir/icon02_C.PNG'" onmouseout="this.src='./vir/icon02.PNG'"> <br> 간행물·통계</li>
+				<li> <img src="./vir/icon03.PNG" onmouseover="this.src ='./vir/icon03_C.PNG'" onmouseout="this.src='./vir/icon03.PNG'"> <br> 조직도·직원검색</li>
+				<li> <img src="./vir/icon04.PNG" onmouseover="this.src ='./vir/icon04_C.PNG'" onmouseout="this.src='./vir/icon04.PNG'"> <br> 법령·지침·서식</li>
+				<li> <img src="./vir/icon05.PNG" onmouseover="this.src ='./vir/icon05_C.PNG'" onmouseout="this.src='./vir/icon05.PNG'"> <br> 공고/공시</li>
 			</ul>
 		</section>
+
 		<section>
+			<div id="inline">
+			<div id="corona_bigbox">
+				<ul id="corona_list">
+					<li>보도자료</li>
+					<li>공지사항</li>
+					<li>채용공고</li>
+					<li>주간건강과질병</li>
+				</ul>
+			<div id="plus">더보기+</div>	
+				<div class="clear"></div>
+				<div id ="corona_main">코로나 바이러스감염증-19국내 발생···&nbsp;<img src="./vir/new.PNG" ></div>
+				<div id ="corona_content">코로나바이러스감염증-19 국내발생 현황(7월 1일, 정례브리핑) 질병관리본부 중앙방역대책본부(본부장 정은경)는 7월 1일 0시 현재, 지역사회에서 36명, 해외유입으로.....</div>
+				<div id ="time">2020-07-01</div>
+				<ul id="chart">
+					<li> 코로나바이러스감염증-19 국내 발생 현황(7월···&nbsp;&nbsp;&nbsp;<img src="./vir/new.PNG" ></li>
+					<li> 말라리아 감염모기 확인에 따른 매개체 방제강화&nbsp;&nbsp;&nbsp;<img src="./vir/new.PNG" ></li>
+					<li> 코로나19 치료제 렘데시비르 공급 시작&nbsp;&nbsp;&nbsp;<img src="./vir/new.PNG" ></li>
+					<li> 코로나19등 감염병 대응을 위한 범부처 협력 강화&nbsp;&nbsp;&nbsp;<img src="./vir/new.PNG" ></li>
+				</ul>
+			</div>
+			<div id=section_C>
+			<table id="section1" border=1>
+				<tr>
+					<td id="td1">감염병정보</td>
+					<td id="td2">건강정보</td>
+					<td id="td3">손상정보</td>
+				</tr>
+			</table>
+				<ul id="section2">
+					<li>ㄱ</li>
+					<li>ㄴ</li>
+					<li>ㄷ</li>
+					<li>ㄹ</li>
+					<li>ㅁ</li>
+					<li>ㅂ</li>
+					<li>ㅅ</li>
+				</ul>
+				<ul id="section3">
+					<li>ㅇ</li>
+					<li>ㅈ</li>
+					<li>ㅊ</li>
+					<li>ㅋ</li>
+					<li>ㅌ</li>
+					<li>ㅍ</li>
+					<li>ㅎ</li>
+				</ul>
+				<ul id="section4">
+					<li>메르스</li>
+					<li>인플루엔자</li>
+					<li>지카바이러스</li>
+					<li>결핵</li>
+				</ul>
+				<ul id="section5">
+					<li>노로바이러스</li>
+					<li>A형감염</li>
+					<li>더보기+</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<div class="clear"></div>
+
+	<section>
+		<div id="sec_img">
+			<img id="sec_img1" src="./vir/img04.PNG"
+			width="360px"
+			height="250px">
+			<img src="./vir/img05.PNG"
+			width="360px"
+			height="250px">
+			<img src="./vir/img06.PNG"
+			width="360px"
+			height="250px">
+		</div>
+	</section>
+
+	<div class="clear"></div>
+
+		<section>
+			<div id="sns">
+				<div id="snsbox1">
+				<img src="./vir/sns.png"><br>
+				<div id="fontsize1">질병 관련 정보를</div><br>
+				<div id="underline1"></div>
+				<div id="fontsize2">국민여러분께 신속히 제공하겠습니다</div>
+				<br>
+				<div id="fontsize3">국가공중보건관리 중추기관으로서 국민 건강을 증진하고, 전문성·혁신·소통·신뢰를
+				<br>기반으로 24시간 365일 최선을 다하겠습니다.</div>
+				</div>
+					<ul id="snsbox2">
+						<li> <img src="./vir/facebook.PNG" onmouseover="this.src ='./vir/facebook_C.PNG'" onmouseout="this.src='./vir/facebook.PNG'"></li>
+						<li> <img src="./vir/twitter.PNG" onmouseover="this.src ='./vir/twitter_C.PNG'" onmouseout="this.src='./vir/twitter.PNG'"></li>
+						<li> <img src="./vir/naver.PNG" onmouseover="this.src ='./vir/naver_C.PNG'" onmouseout="this.src='./vir/naver.PNG'"></li>
+						<li> <img src="./vir/youtube.PNG" onmouseover="this.src ='./vir/youtube_C.PNG'" onmouseout="this.src='./vir/youtube.PNG'"></li>
+					</ul>
+			</div>
+		</section>
+
+		<div class="clear"></div>
+
+		<section>
+			<div id="backgroundcolor">
 			<ul id="sub3">
 				<li> <img src="./vir/section000.PNG"></li>
 				<li> <img src="./vir/section001.PNG"></li>
 				<li> <img src="./vir/section002.PNG"></li>
 				<li> <img src="./vir/section003.PNG"></li>
 			</ul>
+			<ul id="sub_1">
+				<li id="li_1"><span id="bigfont">진짜 힘은 손 씻을 때 생긴다!</span><br>마블 콜라보 질병예방 캠페인</li>
+				<li id="li_2"><span id="bigfont">중동지역을 방문하셨나요?</span><br>메르스 의심증상 발생 시 1339</li>
+				<li id="li_3"><span id="bigfont">기침예절을 지켜요!</span><br>기침예절은 감염병 예방의 기본수칙</li>
+				<li id="li_4"><span id="bigfont">1339 질병관리본부 콜센터</span><br>질병정보 궁금할 때 감염병이 의심될 때</li>
+			</ul>
+		</div>
 		</section>
+
 		<div class="clear"></div>
+
 		<footer>
+				<ul id="link">
+					<li> 관련링크 < > </li>
+					<li> 임상진료지침 디지털 가이드라인 </li>
+					<li> KoGES </li>
+					<li> 질병관리본부국제학술지(Osong PHRP) </li>
+					<li> 만성신장병코호트연구 </li>
+					<li> 국민건강영양조사 </li>
+					<li> 국립의과학지식센터 </li>
+					<li> 보건복지통계 </li>
+				</ul>
+				<ul id="link1">
+					<li>이용안내</li>
+					<li id="font_color">개인정보처리방침</li>
+					<li>웹접근성품질인증</li>
+					<li>저작권정책</li>
+					<li id="border">질병관리본부 관련기관&nbsp;&nbsp;&nbsp;∧</li>
+					<li id="border">보건환경연구원&nbsp;&nbsp;&nbsp;∧</li>
+					<li id="border">보건복지부 및 소속기관&nbsp;&nbsp;&nbsp;∧</li>
+					<li id="border">보건복지부 산화기관&nbsp;&nbsp;&nbsp;∧</li>
+				</ul>
+			<div id="footer_color">
 			<div id="address">
 				<img src="./vir/footer00.PNG">
 			</div> 
 			<div id="customer">
 				<img src="./vir/footer01.PNG">
+			</div>
 			</div>
 		</footer>
 </body>
