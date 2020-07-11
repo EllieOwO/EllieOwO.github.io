@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div
+		{
+			/*겹쳐지지 않음*/
+			position: relative;
+		}
+		img
+		{
+			/*겹쳐짐*/
+			position: absolute;
+		}
+		#img1
+		{
+			/*z-index는 레이어 개념이라고 생각하면 됨.*/
+			/*숫자가 클수록 위에 있음.*/
+			z-index: 0;
+			left:50px;
+			top: 30px;
+		}
+		#img2
+		{
+			z-index: 2;
+			left: 80px;
+			top: 60px;
+		}
+		#img3
+		{
+			z-index: 3;
+			left: 110px;
+			top: 90px;
+		}
+		#img4
+		{
+			z-index: 5;
+			left: 140px;
+			top: 120px;
+		}
+	</style>
+</head>
+<body>
+	<h3>z-index 프로퍼티</h3>
+	<hr>
+	<div id = "img1">
+		<img src="./img/img03.png" width="100" height="140">
+	</div>
+	<div id = "img2">
+		<img src="./img/img03.png" width="100" height="140">
+	</div>
+	<div id = "img3">
+		<img src="./img/img03.png" width="100" height="140">
+	</div>
+	<div id = "img4">
+		<img src="./img/img03.png" width="100" height="140">
+	</div>
+
+</body>
+</html>
