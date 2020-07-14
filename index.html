@@ -1,8 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	</script>
+	<title>질병관리본부</title>
+
+	<script>
+    function slide(){
+    	$('.slide').animate({left:-360}, function(){
+    		$('.slide li:first').appendTo('.slide');
+    		$('.slide').css({left:0})
+    	})
+    }
+
+    setInterval(slide, 5000)
+    </script>
+
+     <script>
+    function slide3(){
+    	$('.slide3').animate({left:-360}, function(){
+    		$('.slide3 li:first').appendTo('.slide3');
+    		$('.slide3').css({left:0})
+    	})
+    }
+
+    setInterval(slide3, 5000)
+    </script>
+
 	<style type="text/css">
 		{
 			padding: 0;
@@ -1978,27 +2000,7 @@
 			</ul>
 		</div>
 
-		<script>
-    function slide(){
-    	$('.slide').animate({left:-360}, function(){
-    		$('.slide li:first').appendTo('.slide');
-    		$('.slide').css({left:0})
-    	})
-    }
-
-    setInterval(slide, 5000)
-    </script>
-
-     <script>
-    function slide3(){
-    	$('.slide3').animate({left:-360}, function(){
-    		$('.slide3 li:first').appendTo('.slide3');
-    		$('.slide3').css({left:0})
-    	})
-    }
-
-    setInterval(slide3, 5000)
-    </script>
+		
 
 	</section>
 	<!-- <section>
