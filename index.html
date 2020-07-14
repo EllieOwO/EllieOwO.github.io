@@ -33,6 +33,7 @@
 			width: 1300px;
 			height: 100px;
 			border-bottom: 1px solid #DFE3F1;
+			z-index:11;
 		}
 		#logo
 		{
@@ -58,11 +59,14 @@
 			border: 0px solid #bbbbbb;
 			top:91px;
 			position: fixed;
+			z-index:11;
+			border-bottom: 1px solid #DFE3F1
 		}
 		nav li
 		{
 			display: inline-block;
 			margin: 20px 30px;
+
 		}
 		section
 		{
@@ -136,7 +140,7 @@
 			display: inline-block;
 			text-align: center;
 			margin-right: 22px;
-			padding-bottom: 20px;
+			padding-bottom: 25px;
 			overflow: hidden;
 		}
 		#sub1 img:hover
@@ -504,15 +508,7 @@
 			display: inline-block;
 		}
 
-		table
-		{
-			border-collapse: collapse;
-		}
-		table,td,th
-		{
-			border-bottom: solid 1px #DFE3F1;
-			padding:20px;
-		}
+		
 		#td1
 		{
 			border-bottom: 1px solid white;
@@ -666,6 +662,7 @@
 			right:160px;
 			display: block;
 			border: solid 0px red;
+
 		}
 		.downcontents2
 		{
@@ -676,6 +673,7 @@
 			padding: 15px;
 			line-height: 40px;
 			border-top: 1px solid #043763;
+
 		}
 		.gu img:hover
 		{
@@ -724,6 +722,7 @@
 			display: block;
 			width: 150px;
 			line-height: 30px;
+			
 		}
 		#box1 li
 		{
@@ -732,6 +731,8 @@
 			padding: 0px;
 			padding-left: 10px;
 			display: block;
+
+
 		}
 		#box1 li:hover
 		{
@@ -1132,13 +1133,14 @@
 			position: relative;
 		}
 		.downcontents
-		{
+		{	
 			color:black;
 			font-size: 16px;
 			display: none;
 			background-color: white;
 			box-shadow: 0px 5px 20px gray;
 			position: absolute;
+
 		}
 		.downcontents li:hover
 		{
@@ -1164,6 +1166,7 @@
 			margin: 10px;
 			margin-right: 80px;
 			margin-top: 30px;
+
 
 		}
 		/*건강정책*/
@@ -1480,7 +1483,356 @@
 			position: absolute;
 			right:10px;
 		}
+		#wrap
+		{
+			float: left;
+			width: 360px;
+			margin-left: 10px;
+			margin: 20px auto;
+			position: relative;
+			overflow: hidden;
+		}
+		.slide
+		{	
+			cursor:pointer;
+			cursor: hand;		
+			padding:0px;
+			margin: 0px;
+			width: 4320px;
+			position: relative;
+		}
+		.slide>li
+		{
+			width: 360px;
+			float: left;
+			height: 260px;
+		}
+		.slide>li>img
+		{
+			width: 100%;
+			height: 100%;
+		}
+		#wrap2
+		{
+			float: left;
+			width: 360px;
+			margin: 20px auto;
+			margin-left: 10px;
+			position: relative;
+			overflow: hidden;
+		}
+		.slide2
+		{			
+			cursor:pointer;
+			cursor: hand;
+			padding:0px;
+			margin: 0px;
+			width: 4320px;
+			position: relative;
+		}
+		.slide2>li
+		{
+			width: 360px;
+			float: left;
+			height: 260px;
+		}
+		.slide2>li>img
+		{
+			width: 100%;
+			height: 100%;
+		}
+		#wrap3
+		{
+			float: left;
+			width: 360px;
+			margin: 20px auto;
+			margin-left: 10px;
+			position: relative;
+			overflow: hidden;
+		}
+		.slide3
+		{	
+			cursor:pointer;
+			cursor: hand;		
+			padding:0px;
+			margin: 0px;
+			width: 4320px;
+			position: relative;
+		}
+		.slide3>li
+		{
+			width: 360px;
+			float: left;
+			height: 260px;
+		}
+		.slide3>li>img
+		{
+			width: 100%;
+			height: 100%;
+		}
+		#wrap h3
+		{
+			position:absolute;
+			left:0;
+			top:0;
+			margin:0px;
+			padding:0px;
+			padding-left:10px;
+			z-index:10;
+			width:100%;
+			height:34px;
+			line-height:34px;
+			background:rgba(0,0,0,0.3);
+			font-size:14px; color:#fff;
+			font-weight:normal;
+		}
+		#wrap2 h3
+		{
+			position:absolute;
+			left:0;
+			top:0;
+			margin:0px;
+			padding:0px;
+			padding-left:10px;
+			z-index:10;
+			width:100%;
+			height:34px;
+			line-height:34px;
+			background:rgba(0,0,0,0.3);
+			font-size:14px; color:#fff;
+			font-weight:normal;
+		}
+		#wrap3 h3
+		{
+			position:absolute;
+			left:0;
+			top:0;
+			margin:0px;
+			padding:0px;
+			padding-left:10px;
+			z-index:10;
+			width:100%;
+			height:34px;
+			line-height:34px;
+			background:rgba(0,0,0,0.3);
+			font-size:14px; color:#fff;
+			font-weight:normal;
+		}
+		.drop
+		{
+			margin-top: 10px;
+		}
+		#bodo
+		{
+			cursor:pointer;
+			cursor: hand;
+			float: left;
+			position: relative;
+			border: 1px solid #DFE3F1;
+			padding: 20px;
+			margin: 0px;
+			width: 716px;
+			height: 240px;
+		}
+		.bodo_line
+		{
+			position: absolute;
+			margin: 0px;
+			padding: 0px;
+			width: 700px;
+			border-bottom: 1px solid #DFE3F1;
+		}
+		.bodo_line li
+		{
+			font-weight: bold;
+			display: inline-block;
+			margin: 0px;
+			padding: 0px;
+			padding-bottom: 20px;
+			padding-top: 10px;
+			margin-right: 30px;
+		}
+		.bodo_line li:hover
+		{
+			border-bottom: 2px solid #21A089;
+		}
+		.plus
+		{
+			color:#81868E;
+			position: absolute;
+			right: 18px;
+			padding-top: 10px;
+		}
+		#bodo > h3
+		{
+			font-size: 21px;
+			position: absolute;
+			top: 90px;
+		}
+		.middle
+		{
+			line-height: 20px;
+			position: absolute;
+			top:150px;
+			font-size: 80%;
+		}
+		.bottom
+		{
+			color: #81868E;
+			position: absolute;
+			top: 230px;
+			font-size: 80%;
+		}
+		.bodo_list
+		{
+			font-size: 80%;
+			position: absolute;
+			top:110px;
+			right:15px;
+			line-height: 20px;
+		}
+		.bodo_list li
+		{
+			padding-bottom: 15px; 
+			list-style-type: square;
+		}
+		.bodo_color
+		{
+			color:#21A089;
+			border-bottom: 2px solid #21A089;
+		}
+		/*표*/
+		#pho
+		{
+
+			padding:0px;
+			margin: 0px;
+			border: 1px solid #DFE3F1;
+			float: left;
+			position: relative;
+			margin-left: 10px;
+			width: 320px;
+			height: 280px;
+			border-top: 1px solid white;
+		}
+		
+		table
+		{
+			border-collapse: collapse;
+			width: 321px;
+			font-size: 90%;
+			cursor:pointer;
+			cursor: hand;
+		}
+			table,td,th
+		{
+			border-color: #DFE3F1;
+			border-bottom: solid 1px #DFE3F1;
+			padding:20px;
+			margin: 0px;
+		}
+		.td1
+		{
+			color: #043763;
+			font-weight: bold;
+			border: solid 1px #DFE3F1;
+			border-top: 2px solid #043763;
+			border-bottom: 1px solid white;
+			border-left: 1px solid white;
+		}
+		.td2
+		{
+			border: solid 1px #DFE3F1;
+			background-color: #F5F6FA
+		}
+		.td3
+		{
+			border: solid 1px #DFE3F1;
+			background-color: #F5F6FA
+		}
+		.hangle
+		{
+
+			margin: 0px;
+			padding: 0px;
+			margin-left: 11px;
+			margin-bottom: 3px;
+			margin-top: 30px;
+		}
+		.hangle li
+		{
+			color:#6676A5;
+			background-color: #F5F6FA;
+			display: inline-block;
+			border: 1px solid #DFE3F1;
+			margin: 0px;
+			padding: 4px;
+			padding-left: 10px;
+			padding-right: 10px
+		}
+		.hangle2
+		{
+			margin: 0px;
+			padding: 0px;
+			margin-left: 11px;
+			margin-bottom: 30px;
+			margin-top: 10px;
+		}
+		.hangle2 li
+		{
+			color:#6676A5;
+			background-color: #F5F6FA;
+			display: inline-block;
+			border: 1px solid #DFE3F1;
+			margin: 0px;
+			padding: 4px;
+			padding-left: 10px;
+			padding-right: 10px
+		}
+		.hangle li:hover
+		{
+			background-color: #21A089;
+			color: white;
+			cursor: pointer;
+			cursor: hand;
+		}
+		.hangle2 li:hover
+		{
+			background-color: #21A089;
+			color: white;
+			cursor: pointer;
+			cursor: hand;
+		}
+		.ang
+		{
+			cursor:pointer;
+			cursor: hand;
+			font-size: 90%;
+			padding: 0px;
+			margin: 0px;
+			margin: 11px;
+		}
+		.ang li
+		{
+			padding: 5px;
+			display: inline-block;
+			border:1px solid #DFE3F1;;
+		}
+		#ah
+		{
+			width: 1090px;
+			height: 280px;
+			padding:0px;
+			margin: 0px;
+		}
+		.drop li
+		{
+			list-style-type: square;
+		}
+
+	
 	</style>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body id="page">
 
@@ -1498,11 +1850,13 @@
 		</aside>
 		<div class="clear"></div>
 		<section>
+			<div id="dont">
 			<ul id="sub1">
-				<li id="sub1_color1"> <img src="./vir/img00.PNG" width="250"> <br> 온열질환 건강수칙 </li>
-				<li id="sub1_color2"> <img src="./vir/img01.PNG" width="250"> <br> 비브리오패혈증 예방수칙 </li>
-				<li id="sub1_color3"> <img src="./vir/img02.PNG" width="250"> <br> 미세먼지 건강수칙 </li>
-				<li id="sub1_color4"> <img src="./vir/img03.PNG" width="250"> <br> 코로나19 영상자료 </li>
+				<li id="sub1_color1"> <img src="./vir/img00.PNG" width="250"> <br><br> 온열질환 건강수칙 </li>
+				<li id="sub1_color2"> <img src="./vir/img01.PNG" width="250"> <br><br> 비브리오패혈증 예방수칙 </li>
+				<li id="sub1_color3"> <img src="./vir/img02.PNG" width="250"> <br><br> 미세먼지 건강수칙 </li>
+				<li id="sub1_color4"> <img src="./vir/img03.PNG" width="250"> <br><br> 코로나19 영상자료 </li>
+				</div>
 			</ul>
 		</section>
 		<section>
@@ -1519,7 +1873,135 @@
 
 	<div class="clear"></div>
 
+<!--   															      다시 만드는거 ㅋ..      							   -->
+	<section id="ah">
+		<div id="bodo">
+			<ul class="bodo_line">
+				<li class="bodo_color">보도자료</li>
+				<li>공지사항</li>
+				<li>채용공고</li>
+				<li>주간건강과질병</li>
+			</ul>
+		<span class="plus">
+			더보기+
+		</span>
+		<h3>코로나바이러스감염증-19국내 발생 ···&nbsp;&nbsp;<img src="./vir/new.PNG"></h3>
+		<span class="middle">
+			코로나바이러스감염증-19 국내 발생 현황(7월12일)□질병관리본<br>
+			부중앙방역대책본부(본부장 정은경)는 7월12일0시 기준으로, 국내<br>
+			발생 신규 확진자는 21명이 확인되.....
+		</span>
+		<span class="bottom">
+			2020-07-12
+		</span>
+		<ul class="bodo_list">
+			<li>코로나바이러스감염증-19 국내 발생 현황(7월 ...&nbsp;&nbsp;<img src="./vir/new.PNG"></li>
+			<li>코로나바이러스감염증-19 국내 발생 현황(7월 ...&nbsp;&nbsp;<img src="./vir/new.PNG"></li>
+			<li>코로나바이러스감염증-19 국내 발생 현황(7월 ...&nbsp;&nbsp;<img src="./vir/new.PNG"></li>
+			<li>베트남 디프테리아 유행에 따른 예방접종 등 당부&nbsp;<img src="./vir/new.PNG"></li>
+		</ul>
+		</div>
+		<div id="pho">
+			 <table border="1">
+			 	<tr>
+			 		<td class="td1">감염병정보</td>
+			 		<td class="td2">건강정보</td>
+			 		<td class="td3">손상정보</td>
+			 	</tr>		 	
+			 </table>
+			 <ul class="hangle">
+			 		<li>ㄱ</li>
+			 		<li>ㄴ</li>
+			 		<li>ㄷ</li>
+			 		<li>ㄹ</li>
+			 		<li>ㅁ</li>
+			 		<li>ㅂ</li>
+			 		<li>ㅅ</li>
+			</ul>
+			<ul class="hangle2">
+			 		<li>ㅇ</li>
+			 		<li>ㅈ</li>
+			 		<li>ㅊ</li>
+			 		<li>ㅋ</li>
+			 		<li>ㅌ</li>
+			 		<li>ㅍ</li>
+			 		<li>ㅎ</li>
+			 </ul>
+		 	<ul class="ang">
+		 		<li>메르스</li>
+		 		<li>인플루엔자</li>
+		 		<li>지카바이러스</li>
+				<li>결핵</li>
+			</ul>
+			<ul class="ang">
+				<li>노로바이러스</li>
+				<li>A형감염</li>
+				<li>더보기+</li>
+		 	</ul>
+		</div>
+	</section>
+<!--                              										     	 하....                             		        -->
+	<div class="clear"></div>
+
 	<section>
+		<div id="wrap">
+			<h3>배너존</h3>
+			<ul class="slide">
+				<li> <img src="./vir/00.jpg"> </li>
+				<li> <img src="./vir/01.jpg"> </li>
+				<li> <img src="./vir/02.jpg"> </li>
+				<li> <img src="./vir/03.jpg"> </li>
+				<li> <img src="./vir/04.jpg"> </li>
+				<li> <img src="./vir/05.jpg"> </li>
+				<li> <img src="./vir/06.jpg"> </li>
+				<li> <img src="./vir/07.jpg"> </li>
+				<li> <img src="./vir/08.jpg"> </li>
+				<li> <img src="./vir/09.jpg"> </li>
+				<li> <img src="./vir/10.jpg"> </li>
+				<li> <img src="./vir/11.jpg"> </li>
+			</ul>
+		</div>
+		<div id="wrap2">
+			<h3>알림존</h3>
+			<ul class="slide2">
+				<li> <img src="./vir/12.jpg"> </li>
+			</ul>
+		</div>
+		<div id="wrap3">
+			<h3>카드뉴스</h3>
+			<ul class="slide3">
+				<li> <img src="./vir/13.jpg"> </li>
+				<li> <img src="./vir/14.jpg"> </li>
+				<li> <img src="./vir/15.jpg"> </li>
+				<li> <img src="./vir/16.jpg"> </li>
+				<li> <img src="./vir/17.jpg"> </li>
+			</ul>
+		</div>
+
+		<script>
+    function slide(){
+    	$('.slide').animate({left:-360}, function(){
+    		$('.slide li:first').appendTo('.slide');
+    		$('.slide').css({left:0})
+    	})
+    }
+
+    setInterval(slide, 5000)
+    </script>
+
+     <script>
+    function slide3(){
+    	$('.slide3').animate({left:-360}, function(){
+    		$('.slide3 li:first').appendTo('.slide3');
+    		$('.slide3').css({left:0})
+    	})
+    }
+
+    setInterval(slide3, 5000)
+    </script>
+
+	</section>
+	<!-- <section>
 		<div id="sec_img">
 			<img id="sec_img1" src="./vir/img04.PNG"
 			width="360px"
@@ -1531,7 +2013,7 @@
 			width="360px"
 			height="250px">
 		</div>
-	</section>
+	</section> -->
 
 	<div class="clear"></div>
 
@@ -1611,7 +2093,7 @@
 			<div class="drop">
 				<ul> 감염병
 					<div class="downcontents">
-					<li><a style="text-decoration: none;"href="http://www.cdc.go.kr/contents.es?mid=a20101000000">감염병정보</a></li>
+					<li><a style="text-decoration: none;color: black;"href="http://www.cdc.go.kr/contents.es?mid=a20101000000">감염병정보</a></li>
 					<ul id="box1">
 						<li>■ 해외감염정보</li>
 						<li>■ 해외질병</li>
@@ -1624,6 +2106,7 @@
 					<li>예방접종 <img src="./vir/what2.PNG"></li>
 					<li>감염병간행물</li>
 					</div>
+				</ul>
 			</div>
 			<div class="drop">
 				<ul> 건강정책
@@ -1701,7 +2184,7 @@
 				</ul>
 			</div>
 			<div class="drop">
-				<ul> <a style="text-decoration: none;"href="./index01.html"target="_blank" >연구개발</a>
+				<ul> <a style="text-decoration: none;color: black;"href="./index01.html"target="_blank" >연구개발</a>
 					<div class="downcontents5">
 						<li>질병연구</li>
 						<ul id="box9">
@@ -1850,7 +2333,7 @@
 			<input type="textarea" name="msg" placeholder="   검색어를 입력해주세요.">
 		</label>
 		<label>
-			<input type="image"img src="./vir/search.PNG"name="btn">
+			<input type="image"img src="./vir/search.PNG"name="btn" onclick="alert('195152 이강희')">
 		</label>
 	</form>
 	<div class="mer">
@@ -1879,3 +2362,5 @@
 	</header>
 </body>
 </html>
+
+<!-- z-index 기능을 다 해서야 "아 맞다!"하고 깨달은 저... header랑 nav를 일부러 내렸더니......................에잉!  -->
